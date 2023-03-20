@@ -8,7 +8,7 @@ Please open an issue on this repo if you run into any issues using this script.
 
 ## Getting started
 
-Go to the [releases](https://wwwin-github.cisco.com/robbeck/nc_onboarding/releases) page of this repository and download the **latest** version for the target OS and architecture you plan to run the script on.  For example, PC users would likely choose the zip file ending in `windows_amd64.zip` while Mac users with Apple silicon would chose `darwin_arm64.zip`. Once downloaded, extract the contents of the zip file.
+Go to the [releases](https://github.com/datacenter/nexus-cloud-validation/releases) page of this repository and download the **latest** version for the target OS and architecture you plan to run the script on.  For example, PC users would likely choose the zip file ending in `windows_amd64.zip` while Mac users with Apple silicon would chose `darwin_arm64.zip`. Once downloaded, extract the contents of the zip file.
 
 A `yaml` file is required for the script to know how to access the target fabric.  Below are example yaml files:
 
