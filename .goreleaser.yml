@@ -28,12 +28,12 @@ builds:
     ignore:
       - goos: darwin
         goarch: "386"
-    binary: '{{ replaceAll .ProjectName "-" "_" }}_v{{ .Version }}'
+    binary: '{{ replace .ProjectName "-" "_" }}_v{{ .Version }}'
 archives:
   - format: zip
-    name_template: '{{ replaceAll .ProjectName "-" "_" }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}'
+    name_template: '{{ replace .ProjectName "-" "_" }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}'
 checksum:
-  name_template: '{{ replaceAll .ProjectName "-" "_" }}_{{ .Version }}_SHA256SUMS'
+  name_template: '{{ replace .ProjectName "-" "_" }}_{{ .Version }}_SHA256SUMS'
   algorithm: sha256
 signs:
   - artifacts: checksum
