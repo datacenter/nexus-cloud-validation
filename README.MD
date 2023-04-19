@@ -61,6 +61,8 @@ nxos:
  `-filename` - (required) the path to the configuration yaml file created previously
  
  `-out` - (optional) the filename for the results report.
+ 
+ `-logging` - (optional) sets the logging level during script execution.  Valid values are `info`, `debug`, or `trace`
 
  ### Entering a password
 

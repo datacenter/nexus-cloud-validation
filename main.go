@@ -1668,10 +1668,20 @@ func main() {
 	//* Read configuration file from supplied filename
 	config_file := flag.String("filename", "config.yaml", "yaml config filename")
 	output_file := flag.String("out", "nexus_cloud_readiness", "output filename")
+	logging_level := flag.String("logging", "info", "logging level")
 	flag.Parse()
 	config, err := readConf(*config_file)
 	if err != nil {
 		log.Fatal(err)
+	}
+
+	switch *logging_level {
+	case "debug":
+		log.SetLevel(log.DebugLevel)
+		break
+	case "trace":
+		log.SetLevel(log.TraceLevel)
+		break
 	}
 
 	//* Retrieve support matrix
